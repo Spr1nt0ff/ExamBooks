@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace BookStoreDB
 {
-    internal class Users
+    public class Users
     {
+        public int Id { get; set; }
+        public string Login { get; set; }
+        public string Email { get; set; }
+        public string PasswordHash { get; set; }
+        public ICollection<ReservedBook> ReservedBooks { get; set; }
     }
 }
